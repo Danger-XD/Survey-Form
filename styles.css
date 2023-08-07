@@ -1,0 +1,66 @@
+html {
+    min-height: 100%;/* fill the screen height to allow vertical alignement */
+    display: grid; /* display:flex works too since body is the only grid cell */
+}
+body{
+    margin: auto;
+    margin-bottom: 15px;
+    height: max-content;
+    background-color: aquamarine;
+    font-family: sans-serif;
+}
+#container{
+    text-align: center;
+    margin-top: 50px;
+}
+#title{
+    font-weight: 600;
+}
+#description{
+    font-style: italic;
+    font-size: 1.2em;
+}
+#survey-form{
+    display: block;
+    background-color: burlywood;
+    border: 1px solid black;
+    padding: 30px;
+    font-size: 1.2em;
+    width: 700px;
+    min-width: auto; 
+}
+#name-label,#email-label,#number-label,.dropdown,#textarea,.checkbox,#radio-label,.checkbox-label{
+    display: block;
+    margin-top: 1.5rem;
+}
+#name,#email,#number,#dropdown{
+    width: 100%;
+    height: 2.375rem;
+    margin-top: 0.5rem;
+    display: block;
+    border-radius: 8px;
+    border: 0 solid burlywood;
+}
+#textbox{
+    display: block;
+    width: 100%;
+    margin-top: 0.5rem;
+    border: 0 solid burlywood;
+}
+#submit{
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    height: 2.5rem;
+    font-size: medium;
+    font-weight: 650;
+}
+#footer{
+    text-align: center;
+}
+input::placeholder{
+    font-size: larger;
+}
+textarea::placeholder{
+    font-size: larger;
+}
